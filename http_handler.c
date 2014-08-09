@@ -18,9 +18,7 @@ http_respone_message get_response_message() {
 }
 
 void output_response(int sock, http_respone_message response) {
-	char message[200];
 	char header[200];
-
 	strcpy(header, response.header.protocol);
 	strcat(header, " ");
 	strcat(header, response.header.status);
